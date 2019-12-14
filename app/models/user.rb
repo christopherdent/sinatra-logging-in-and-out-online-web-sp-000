@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessor :username, :password, :balance
+  attr_accessor :user_id, :password, :balance
   
 
 end 
