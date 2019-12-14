@@ -1,7 +1,7 @@
 class Helpers < ActiveRecord::Base
   
   
-  def self.current_user(session_hash)
+  def self.current_user(session)
     User.find(session_hash["user_id"])
   end
 
