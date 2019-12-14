@@ -1,11 +1,11 @@
 class Helpers < ActiveRecord::Base
   
   
-  def self.current_user(session_hash)
+  def self.current_user(session)
     User.find(session_hash["username"])
   end
 
-  def self.is_logged_in?(session_hash)
+  def self.is_logged_in?(session)
     !!session_hash["username"]
   end
 end 	 
