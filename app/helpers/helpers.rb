@@ -7,9 +7,8 @@ class Helpers < ActiveRecord::Base
   end
 
   def self.is_logged_in?(session_hash)
-     if session.has_key?(user_id) 
-    !!session_hash["user_id"]
-  end 
+   !!session_hash["user_id"]
+   
   end
   
 end 	 
