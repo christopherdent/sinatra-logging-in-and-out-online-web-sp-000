@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
 
     @user = User.find_by(username: params[:username])
     if @user && @user.password == params[:password]   #if password matches what came in the params hash... 
- binding.pry
+ 
       session[:user_id] = @user.id    #set the session id equal to the user id 
       redirect to '/account'
     else
